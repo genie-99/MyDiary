@@ -1,6 +1,6 @@
 # MyDiary
 
-Codex `diary` 스킬과 Obsidian에서 함께 볼 수 있는 학습 기록 저장소입니다.
+Codex `diary` 스킬과 GitHub Issue 기반 학습 기록 저장소입니다.
 
 ## 포함된 스킬
 
@@ -32,50 +32,22 @@ $diary 오늘 공부한 내용을 정리해서 GitHub Issue로 만들어줘
 $diary 오늘 학습 내용과 C:\SSAFY\workspace의 관련 수정사항을 확인해서 GitHub Issue로 만들어줘
 ```
 
-스킬은 대화와 학습 노트를 바탕으로 독립적인 주제마다 GitHub Issue를 하나씩 만들고, 같은 라벨의 이전 학습 기록과 연결한 Mermaid 학습 지도를 제공합니다. Issue를 성공적으로 게시하면 아래 Obsidian 학습 색인에도 핵심 내용을 함께 반영합니다.
+스킬은 대화와 학습 노트를 바탕으로 독립적인 주제마다 GitHub Issue를 하나씩 만들고, 같은 라벨의 이전 학습 기록과 연결한 Mermaid 학습 지도를 제공합니다. Issue를 성공적으로 게시하면 아래 학습 Issue 목록에 링크를 추가합니다.
 
-## Obsidian 학습 색인
+## 학습 Issue 목록
 
-이 저장소 루트를 Obsidian vault로 열면 README와 날짜별 Markdown 노트를 함께 탐색할 수 있습니다. GitHub Issue는 상세 학습 근거이고, 아래 색인은 빠른 복습용 요약입니다. 그래프 뷰의 시작점은 [[00-학습 지도]]입니다.
+GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 <!-- diary-index:start -->
-### 2026-07-26
+### Algorithm
 
-#### Algorithm — 완전 이진 트리 배열 표현과 중위 순회
+- [#24 — 완전 이진 트리 배열 표현과 중위 순회로 화분 번호 배치하기](https://github.com/genie-99/MyDiary/issues/24)
+- [#23 — 인접 리스트와 DFS로 트리 자손 수 세기](https://github.com/genie-99/MyDiary/issues/23)
+- [#16 — HashSet으로 중복 제거 문제 해결하기](https://github.com/genie-99/MyDiary/issues/16)
+- [#15 — DFS 완전탐색과 DP 전환 기준 익히기](https://github.com/genie-99/MyDiary/issues/15)
+- [#4 — DFS 백트래킹으로 숫자 교환 최대값 탐색하기](https://github.com/genie-99/MyDiary/issues/4)
 
-- GitHub Issue: [#24](https://github.com/genie-99/MyDiary/issues/24)
-- 완전 이진 트리는 인덱스 `p` 기준으로 왼쪽 자식 `p * 2`, 오른쪽 자식 `p * 2 + 1`로 표현할 수 있다.
-- SWEA 26939는 비트 계산 문제가 아니라 `왼쪽 → 현재 → 오른쪽` 중위 순회로 화분 번호를 배치하는 문제다.
-- 인접 리스트가 필요한 트리와 배열 인덱스만으로 표현되는 완전 이진 트리를 구분했다.
-- 다음 학습: 전위·중위·후위 순회의 방문 순서를 같은 트리에서 비교한다.
-
-#### Algorithm — 인접 리스트와 DFS로 자손 수 세기
-
-- GitHub Issue: [#23](https://github.com/genie-99/MyDiary/issues/23)
-- `List<Integer>[]`의 각 칸에 `ArrayList`를 만들어 부모별 자식 목록을 저장한다.
-- 직접 자식 수와 자식·손자를 모두 포함하는 자손 수를 구분하고, DFS로 서브트리 수를 합산한다.
-- 다음 학습: 같은 트리를 BFS로도 순회해 레벨별 노드와 거리를 확인한다.
-
-### 2026-07-25
-
-#### Spring — Spring Boot 실행 환경과 웹 요청 흐름
-
-- GitHub Issue: [#21](https://github.com/genie-99/MyDiary/issues/21)
-- Spring Boot는 Spring 기반 애플리케이션을 자동 설정과 내장 Tomcat으로 빠르게 실행하게 한다.
-- Controller는 `@Controller` 또는 `@RestController`로 HTTP 요청 처리 대상으로 등록하는 개발자 작성 클래스다.
-- `resources` 아래의 `templates`, `static`, `application.properties`는 각각 다른 실행 리소스 역할을 가진다.
-- 다음 학습: 정적 컨텐츠, MVC·Thymeleaf, JSON API의 응답 방식을 비교한다.
-
-#### Gradle — 빌드 도구와 Gradle Wrapper
-
-- GitHub Issue: [#22](https://github.com/genie-99/MyDiary/issues/22)
-- Gradle은 의존성 관리, 컴파일, 테스트, 패키징을 자동화한다.
-- `gradlew`는 컴퓨터에 설치된 Gradle과 무관하게 프로젝트가 정한 Gradle 버전으로 실행하게 한다.
-- 다음 학습: `./gradlew build`, `test`, `bootRun`의 결과와 역할을 비교한다.
-
-### 이전 학습 기록
-
-#### Java
+### Java
 
 - [#20 — JVM Runtime Data Areas로 메모리 구조 이해하기](https://github.com/genie-99/MyDiary/issues/20)
 - [#14 — 제네릭으로 타입 안전성과 재사용성 높이기](https://github.com/genie-99/MyDiary/issues/14)
@@ -87,20 +59,20 @@ $diary 오늘 학습 내용과 C:\SSAFY\workspace의 관련 수정사항을 확�
 - [#8 — 인터페이스 규약과 다중 구현으로 다형성 설계하기](https://github.com/genie-99/MyDiary/issues/8)
 - [#6 — 상속과 생성자 체인으로 객체 초기화 이해하기](https://github.com/genie-99/MyDiary/issues/6)
 
-#### Spring · Frontend · Git · Gradle
+### Spring · Gradle · Frontend · Git
 
-- [#5 — Spring MVC와 Thymeleaf 요청·화면 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/5)
+- [#25 — XML·JSON과 @ResponseBody 메시지 변환 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/25)
+- [#22 — 빌드 도구·의존성·Gradle Wrapper 이해하기](https://github.com/genie-99/MyDiary/issues/22)
+- [#21 — Spring Boot 프로젝트 구조와 내장 Tomcat 이해하기](https://github.com/genie-99/MyDiary/issues/21)
 - [#19 — Leaflet 기반 서울 관광 지도 구조 분석하기](https://github.com/genie-99/MyDiary/issues/19)
 - [#18 — fetch·pull·push와 GitHub CLI 인증 흐름 익히기](https://github.com/genie-99/MyDiary/issues/18)
+- [#5 — Spring MVC와 Thymeleaf 요청·화면 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/5)
 
-#### Algorithm · Design Patterns
+### Design Patterns
 
-- [#16 — HashSet으로 중복 제거 문제 해결하기](https://github.com/genie-99/MyDiary/issues/16)
-- [#15 — DFS 완전탐색과 DP 전환 기준 익히기](https://github.com/genie-99/MyDiary/issues/15)
-- [#4 — DFS 백트래킹으로 숫자 교환 최대값 탐색하기](https://github.com/genie-99/MyDiary/issues/4)
 - [#7 — Strategy와 Template Method로 역할 분리하기](https://github.com/genie-99/MyDiary/issues/7)
 
-#### AI · Codex
+### AI · Codex
 
 - [#17 — LLM·RAG·Agentic AI 작동 구조 이해하기](https://github.com/genie-99/MyDiary/issues/17)
 - [#3 — 공유 가능한 $diary 스킬과 Issue 워크플로 만들기](https://github.com/genie-99/MyDiary/issues/3)

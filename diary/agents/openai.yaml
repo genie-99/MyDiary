@@ -1,4 +1,4 @@
 interface:
   display_name: "Study Diary"
-  short_description: "Publish study Issues, Obsidian graph notes, and maps."
-  default_prompt: "Use $diary to publish one labelled Issue per study topic, create connected Obsidian notes, and map it to earlier learning."
+  short_description: "Publish study Issues, prompts, README links, and maps."
+  default_prompt: "Use $diary to publish one labelled Issue per study topic, include my work prompts, add its link to MyDiary's README, and map it to earlier learning."
