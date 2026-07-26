@@ -1,11 +1,11 @@
 ---
 name: diary
-description: Create topic-separated Korean study GitHub Issues and an Obsidian-ready README learning index from the user's conversation and notes. Use when the user invokes `$diary`, asks for a study diary or learning retrospective, wants their learning organized into one Issue per topic with labels and learning maps, or asks to record their GitHub study Issues in MyDiary's README for Obsidian.
+description: Create topic-separated Korean study GitHub Issues, linked Obsidian graph notes, and a README learning index from the user's conversation and notes. Use when the user invokes `$diary`, asks for a study diary or learning retrospective, wants their learning organized into one Issue per topic with labels and learning maps, or asks to record their GitHub study Issues as connected Obsidian notes in MyDiary.
 ---
 
 # Diary
 
-Turn the user's learning into durable, topic-focused GitHub Issues and an Obsidian-ready README index. Treat the conversation as the primary evidence of what the user actually studied.
+Turn the user's learning into durable, topic-focused GitHub Issues, connected Obsidian graph notes, and an Obsidian-ready README index. Treat the conversation as the primary evidence of what the user actually studied.
 
 ## Source of Truth
 
@@ -38,7 +38,7 @@ Turn the user's learning into durable, topic-focused GitHub Issues and an Obsidi
    - Explain why the advanced material matters, but clearly mark it as a next step rather than evidence of completed learning.
 8. Create each Issue with its one subject label. If GitHub Issue creation is unavailable, return every exact title, label, and body as a draft; do not claim an Issue was created.
 9. After creation, inspect earlier open and closed learning Issues with each created subject label. Build and return a Mermaid learning map for each subject that connects the new Issue to verified prior Issue concepts. If no earlier Issue exists, show the new Issue as the starting node.
-10. After every successfully published Issue, update the MyDiary repository's `README.md` Obsidian learning index as described below. Do not update it for drafts or failed Issue publication.
+10. After every successfully published Issue, update the MyDiary repository's connected Obsidian graph notes and `README.md` learning index as described below. Do not update them for drafts or failed Issue publication.
 
 ## Issue Body Template
 
@@ -74,23 +74,38 @@ Turn the user's learning into durable, topic-focused GitHub Issues and an Obsidi
 4. Create a fresh Issue for each `$diary` run. Do not merge different study sessions merely because the date and label match. Link related earlier Issues in the learning map instead.
 5. Report each created Issue number, URL, title, and label.
 
-## Obsidian README Index
+## Obsidian Graph and README Index
 
-After successful Issue publication, make the learning record browsable in Obsidian as well.
+After successful Issue publication, make the learning record browsable in Obsidian's Graph view as well as in the README index.
 
 1. Treat the MyDiary repository root as the Obsidian vault. Keep the repository's existing documents and unrelated README sections intact.
-2. Update only the content between these markers in `README.md`; create the marker block under `## Obsidian 학습 색인` when it does not exist.
+2. Maintain these local Markdown notes:
+
+   ```text
+   obsidian/00-학습 지도.md
+   obsidian/주제/{Subject}.md
+   obsidian/학습기록/{YYYY-MM-DD} {outcome}.md
+   ```
+
+3. Create or update one `obsidian/학습기록` note for every successfully created Issue.
+   - Use a filesystem-safe outcome in the filename; do not use `/`, `:`, or duplicate filenames.
+   - Include YAML frontmatter with `tags: [study, {label}]` and `source: {Issue URL}`.
+   - Include the Issue title, `주제: [[{Subject}]]`, two to four factual learning bullets, and a direct GitHub Issue link.
+   - Reuse the Issue URL as the idempotency key. If a local note already has that source URL, update it instead of creating another note.
+4. Create or update the matching `obsidian/주제/{Subject}.md` hub. Link it to `[[00-학습 지도]]`, add one or more only-supported related subject links when appropriate, and link the Issue note with `[[note name]]`.
+5. Create or update `obsidian/00-학습 지도.md` so it links every existing subject hub. This is the Graph view entry node.
+6. Use actual `[[wiki links]]` between local notes. Markdown URLs to GitHub alone do not create Graph view edges. Never add a wiki link unless its target note exists.
+7. Update only the content between these markers in `README.md`; create the marker block under `## Obsidian 학습 색인` when it does not exist.
 
    ```md
    <!-- diary-index:start -->
    <!-- diary-index:end -->
    ```
 
-3. Add one concise entry per new Issue. Include the date, subject, GitHub Issue link, two to four factual learning bullets, and one next-learning bullet. Reuse the Issue's `오늘 공부한 내용`, `핵심 정리`, and `다음 학습` sections; do not copy the full raw Issue body or invent details.
-4. Use plain Markdown headings, lists, and GitHub links so the README remains useful both on GitHub and when opened in Obsidian. Add Obsidian wiki links only for confirmed local Markdown files; never create broken wiki links.
-5. Make the update idempotent. If the Issue URL is already present in the marker block, update that entry instead of adding a duplicate.
-6. Keep entries ordered newest first, grouped by date. Do not include labels, Mermaid maps, or repository change inventories unless the user specifically asks for them.
-7. If the repository is unavailable or the Issue was only drafted, leave `README.md` unchanged and explain why.
+8. Add one concise entry per new Issue. Include the date, subject, GitHub Issue link, the confirmed local Obsidian wiki link, two to four factual learning bullets, and one next-learning bullet. Reuse the Issue's `오늘 공부한 내용`, `핵심 정리`, and `다음 학습` sections; do not copy the full raw Issue body or invent details.
+9. Make the README update idempotent. If the Issue URL is already present in the marker block, update that entry instead of adding a duplicate.
+10. Keep entries ordered newest first, grouped by date. Do not include labels, Mermaid maps, or repository change inventories unless the user specifically asks for them.
+11. If the repository is unavailable or the Issue was only drafted, leave all local Obsidian notes and `README.md` unchanged and explain why.
 
 ## Learning Map
 
@@ -111,6 +126,6 @@ flowchart TD
 
 ## Command Handling
 
-- Treat bare `$diary` as: derive subjects from the conversation, create one Issue per subject, update the Obsidian README index for every published Issue, then return the labelled learning maps.
+- Treat bare `$diary` as: derive subjects from the conversation, create one Issue per subject, create or update a connected Obsidian graph note and README entry for every published Issue, then return the labelled learning maps.
 - Treat `$diary <text>` as: use `<text>` as additional primary evidence and combine it with the conversation.
 - If the user asks for drafts, preview the topic split, Issue drafts, and maps without publishing. When earlier Issues cannot be read, start each map with the current draft node and connect only to an explicitly stated next concept.

@@ -36,7 +36,7 @@ $diary 오늘 학습 내용과 C:\SSAFY\workspace의 관련 수정사항을 확�
 
 ## Obsidian 학습 색인
 
-이 저장소 루트를 Obsidian vault로 열면 README와 날짜별 Markdown 노트를 함께 탐색할 수 있습니다. GitHub Issue는 상세 학습 근거이고, 아래 색인은 빠른 복습용 요약입니다.
+이 저장소 루트를 Obsidian vault로 열면 README와 날짜별 Markdown 노트를 함께 탐색할 수 있습니다. GitHub Issue는 상세 학습 근거이고, 아래 색인은 빠른 복습용 요약입니다. 그래프 뷰의 시작점은 [[00-학습 지도]]입니다.
 
 <!-- diary-index:start -->
 ### 2026-07-26
