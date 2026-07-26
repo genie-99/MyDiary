@@ -49,6 +49,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Java
 
+- [#27 — Optional·람다식·Stream의 함수형 인터페이스 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/27)
 - [#20 — JVM Runtime Data Areas로 메모리 구조 이해하기](https://github.com/genie-99/MyDiary/issues/20)
 - [#14 — 제네릭으로 타입 안전성과 재사용성 높이기](https://github.com/genie-99/MyDiary/issues/14)
 - [#13 — enum으로 타입 안전한 상수 표현하기](https://github.com/genie-99/MyDiary/issues/13)
@@ -61,6 +62,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
+- [#26 — 회원 도메인·계층 분리·인터페이스 기반 DI 이해하기](https://github.com/genie-99/MyDiary/issues/26)
 - [#25 — XML·JSON과 @ResponseBody 메시지 변환 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/25)
 - [#22 — 빌드 도구·의존성·Gradle Wrapper 이해하기](https://github.com/genie-99/MyDiary/issues/22)
 - [#21 — Spring Boot 프로젝트 구조와 내장 Tomcat 이해하기](https://github.com/genie-99/MyDiary/issues/21)
