@@ -1,124 +1,116 @@
 ---
 name: diary
-description: Create or update categorized daily study diary GitHub Issues when the user invokes `$diary`, asks for a diary entry, daily study record, learning log, or wants today's dated folder contents and prompt history summarized into an Issue. Also use when the user writes study notes after `$diary`; treat that trailing text as primary source material. Use for workflows that inspect today's local date folder such as `YYYY-MM-DD` or `YYYYMMDD`, inspect existing GitHub Issues, group diary entries by broad field/category, reuse and append only to a same-date same-category Diary Issue, determine the next Diary number only when creating a new Issue, inspect relevant workspace changes including `C:\SSAFY` when requested, and publish or update an Issue titled `[Diary #N] YYYY-MM-DD [Category] 학습기록`.
+description: Create topic-separated Korean study GitHub Issues and an Obsidian-ready README learning index from the user's conversation and notes. Use when the user invokes `$diary`, asks for a study diary or learning retrospective, wants their learning organized into one Issue per topic with labels and learning maps, or asks to record their GitHub study Issues in MyDiary's README for Obsidian.
 ---
 
 # Diary
 
-## Goal
+Turn the user's learning into durable, topic-focused GitHub Issues and an Obsidian-ready README index. Treat the conversation as the primary evidence of what the user actually studied.
 
-Create or update GitHub Issues that record today's learning in Korean. Separate Issues by broad study field/category, so the same date may have multiple Diary Issues when the topics belong to different categories.
+## Source of Truth
 
-Base the entry on today's dated folder in the current repository, the current conversation, meaningful user prompts, executed commands, edited files, repository context, any user-provided notes, and especially any study content written after `$diary` in the user's prompt.
+1. Read the current conversation and any text after `$diary` first. Use it as the authoritative learning evidence.
+2. Use explicit user notes, commands, exercises, and repository changes only to support or clarify that evidence. Do not create a `수정한 파일` section and do not treat a changed file as proof of learning by itself.
+3. Never present an inferred or advanced topic as something the user completed. Label it as additional learning material.
+4. If no study topic is supported by the conversation or the user's notes, ask for study notes rather than inventing an Issue.
 
 ## Workflow
 
-1. Identify the local date.
-   - Use the user's local date when known. In this environment, prefer Asia/Seoul dates if available.
-   - Represent the date as `YYYY-MM-DD` for Issue titles and searches.
-   - Also derive the compact form `YYYYMMDD` for legacy folder lookup.
+1. Determine the local date, preferring Asia/Seoul when it is available.
+2. Read the conversation, `$diary` trailing text, and any user-provided study notes. Collect concrete evidence such as the concept discussed, a question asked, an exercise attempted, or a conclusion reached.
+3. Optionally inspect the current repository with `git status`, `git log`, and a targeted diff when it helps verify an exercise. Do not include a file-change inventory in the Issue body.
+4. Split the learning into independent, stable subjects. Create exactly one Issue per subject in the current diary run.
+   - For example, Java + Spring + HTML produces three Issues, not one combined Issue.
+   - Keep dependent detail in its parent subject: Spring DI and Spring IoC belong in `spring`, not separate `di` and `ioc` Issues.
+   - Use a specific subject only when it is genuinely independent and likely to recur, such as `jpa`, `thymeleaf`, or `sql`.
+5. For each subject, choose exactly one lower-case GitHub label (for example `java`, `spring`, `html`, `jpa`, or `testing`). List repository labels first; reuse a matching label or create the missing label with a short Korean description.
+6. Give each Issue a title that exposes both the subject and the overall learning outcome:
 
-2. Inspect today's date folder in the current repository.
-   - Prefer a folder named `YYYY-MM-DD` under the current workspace repository.
-   - If it does not exist, check for a folder named `YYYYMMDD`.
-   - If both exist, inspect both and keep their contents distinct in the notes.
-   - Read directory names, file names, and concise text file contents when they are relevant to the diary.
-   - For images or binary artifacts, summarize their filenames and visible purpose only when the filename or surrounding context makes it clear.
-   - If today's folder is missing or empty, state that clearly in the Issue body instead of guessing.
+   ```text
+   [Spring] 2026-07-25 — IoC와 DI로 객체 의존성 이해하기
+   ```
 
-3. Identify user-provided diary content.
-   - If the prompt contains text after `$diary`, treat that trailing text as the primary source for `오늘 공부한 내용`.
-   - Clean up the trailing text into readable bullets without changing the meaning.
-   - Combine it with today's folder contents, conversation context, commands, files, and repository work when relevant.
-   - Do not ignore the trailing text even if the rest of the conversation contains other work.
-
-4. Identify the repository that should receive the Issue.
-   - Prefer the current workspace repository.
-   - If the remote is unclear, inspect `git remote -v`.
-   - If no GitHub repository can be determined, ask the user for the target repo before creating or updating the Issue.
-
-5. Inspect related workspace changes when requested.
-   - If the user asks to include changed files, today's work, SSAFY projects, or a project outside the current repo, inspect relevant repositories under `C:\SSAFY`, especially `C:\SSAFY\workspace`.
-   - Use repository evidence such as `git status`, `git log`, `git diff --stat`, and targeted `git show` output to identify confirmed changes.
-   - Include only verified file changes and outcomes in the diary. If a referenced folder or repository cannot be read or has no changes, state that clearly.
-   - When the user names a project such as `SSAFY-Seoulog`, prefer that project path under `C:\SSAFY\workspace` if it exists.
-
-6. Determine the diary category.
-   - Infer one concise broad category from today's folder contents, the user's `$diary` trailing text, current conversation, requested project, or confirmed work.
-   - Prefer stable, high-level categories such as `Java`, `Spring`, `Algorithm`, `Frontend`, `Backend`, `Database`, `DevOps`, `Git/GitHub`, `CS`, `Project`, or a named project such as `SSAFY-Seoulog`.
-   - If multiple unrelated categories are clearly present, create or update one Issue per category instead of merging them into one Issue. Keep each Issue body focused on that category only.
-   - If the category is ambiguous, use the most specific obvious category from the user's notes or folder contents. If no category can be inferred, use `General`.
-
-7. Check existing GitHub Issues to determine whether to update or create a Diary Issue.
-   - Query open and closed Issues.
-   - First find any Diary Issue whose title contains both the current date in `YYYY-MM-DD` format and the selected category marker such as `[Java]`, `[Spring]`, `[Algorithm]`, or `[General]`.
-   - If a same-date same-category Diary Issue exists, reuse that Issue and append the new diary content to its existing body instead of creating another Issue.
-   - If a same-date Diary Issue exists for a different category, do not append to it. Create a separate Issue for the new category.
-   - When appending, keep the existing body intact and add a clearly separated new section such as `---` followed by `## 추가 기록 HH:mm` or another concise timestamped heading.
-   - If no same-date same-category Diary Issue exists, find titles matching `[Diary #N]`, `Diary #N`, or similar Diary-number patterns.
-   - Use the highest existing Diary number plus one only for each newly created Diary Issue.
-   - If no prior Diary Issue exists, use `1`.
-
-8. Build or reuse the title.
-   - For a same-date same-category existing Diary Issue, keep the existing Issue title and Diary number.
-   - For a new Diary Issue, format the title as `[Diary #N] YYYY-MM-DD [Category] 학습기록`.
-   - Use the local date from step 1.
-
-9. Build the Issue body in Korean.
-   - Include `## 분류`.
-   - Include `## 오늘 날짜 폴더 확인`.
-   - Include `## 오늘 공부한 내용`.
-   - Include `## 사용한 프롬프트`.
-   - Include `## 작업/실습 기록`.
-   - Include `## 배운 점`.
-   - Include `## 다음에 해볼 것`.
-   - Add project-specific sections when they clarify the record, such as `## SSAFY-Seoulog 수정 확인`.
-   - Use Mermaid diagrams when the user asks for diagrams, flow summaries, architecture summaries, or `mermaid`.
-   - Keep the content factual. Do not invent study items, prompts, commands, files, or outcomes.
-   - If information is missing, write a short note such as `확인된 내용 없음` rather than guessing.
-
-10. Capture prompts accurately.
-   - List the user's meaningful prompts from today's conversation, including the current `$diary` request.
-   - Include the `$diary ...` prompt itself when it contains study notes.
-   - Preserve Korean wording when possible.
-   - Summarize long prompts only when needed for readability.
-   - Distinguish direct user prompts from inferred implementation steps.
-
-11. Create or update the GitHub Issue.
-   - If a same-date same-category Diary Issue exists, fetch its current body and update it with the appended diary content. Prefer `gh issue view --json body` followed by `gh issue edit --body-file` when GitHub CLI is authenticated and available.
-   - If no same-date same-category Diary Issue exists, prefer `gh issue create` when the GitHub CLI is authenticated and available.
-   - Otherwise use an available GitHub MCP/tooling integration if present.
-   - If no GitHub write path is available, provide the exact title and body for the user and explain that Issue creation or update could not be completed.
-
-12. Report the result.
-   - Return the created or updated Issue number and URL when available.
-   - Mention whether the diary was appended to an existing same-date same-category Issue or created as a new categorized Issue.
-   - Mention the Diary number used.
-   - Mention the category used.
-   - Mention which local date folder was inspected.
-   - Keep the final response concise.
+   - Use the human-readable subject in the bracket and the exact label in GitHub metadata.
+   - Replace the example's date and outcome with the current subject's actual content.
+   - Avoid vague titles such as `Spring 공부` or a title that combines unrelated subjects.
+7. Write a Korean Issue body using the template below. Keep it concise and factual. Add one `심화 확장` section with useful next-level context that builds naturally on the topic.
+   - Draw advanced material from stable knowledge or authoritative documentation when current behavior, versions, or library APIs matter.
+   - Explain why the advanced material matters, but clearly mark it as a next step rather than evidence of completed learning.
+8. Create each Issue with its one subject label. If GitHub Issue creation is unavailable, return every exact title, label, and body as a draft; do not claim an Issue was created.
+9. After creation, inspect earlier open and closed learning Issues with each created subject label. Build and return a Mermaid learning map for each subject that connects the new Issue to verified prior Issue concepts. If no earlier Issue exists, show the new Issue as the starting node.
+10. After every successfully published Issue, update the MyDiary repository's `README.md` Obsidian learning index as described below. Do not update it for drafts or failed Issue publication.
 
 ## Issue Body Template
 
-```markdown
-## 분류
--
-
-## 오늘 날짜 폴더 확인
--
+```md
+## 오늘의 주제
+- {subject}
 
 ## 오늘 공부한 내용
--
+- {conversation and note evidence, organized as concepts or outcomes}
 
-## 사용한 프롬프트
--
+## 대화에서 확인한 학습 근거
+- {brief paraphrase of a user question, note, exercise, or conclusion}
 
-## 작업/실습 기록
--
+## 핵심 정리
+- {the most important concept, distinction, or pitfall}
 
-## 배운 점
--
+## 심화 확장
+- {advanced next step}: {why it follows from today's topic and what to study next}
 
-## 다음에 해볼 것
--
+## 다음 학습
+- {one or two concrete next actions}
 ```
+
+- Do not add `## 수정한 파일`, a raw diff, or a generic prompt transcript.
+- Do not include unrelated repository work simply because it happened on the same date.
+- Use actual user wording only when a short quote preserves an important distinction; otherwise paraphrase it.
+
+## GitHub Issue Handling
+
+1. Confirm that `gh` is available, authenticated, and points to the intended repository. If it cannot be confirmed, provide drafts instead of publishing.
+2. List existing labels before creating any. Create only the missing stable subject labels.
+3. Create one Issue per subject with one `--label` argument. Do not attach incidental labels such as `diary` or `study` unless the user explicitly requests them.
+4. Create a fresh Issue for each `$diary` run. Do not merge different study sessions merely because the date and label match. Link related earlier Issues in the learning map instead.
+5. Report each created Issue number, URL, title, and label.
+
+## Obsidian README Index
+
+After successful Issue publication, make the learning record browsable in Obsidian as well.
+
+1. Treat the MyDiary repository root as the Obsidian vault. Keep the repository's existing documents and unrelated README sections intact.
+2. Update only the content between these markers in `README.md`; create the marker block under `## Obsidian 학습 색인` when it does not exist.
+
+   ```md
+   <!-- diary-index:start -->
+   <!-- diary-index:end -->
+   ```
+
+3. Add one concise entry per new Issue. Include the date, subject, GitHub Issue link, two to four factual learning bullets, and one next-learning bullet. Reuse the Issue's `오늘 공부한 내용`, `핵심 정리`, and `다음 학습` sections; do not copy the full raw Issue body or invent details.
+4. Use plain Markdown headings, lists, and GitHub links so the README remains useful both on GitHub and when opened in Obsidian. Add Obsidian wiki links only for confirmed local Markdown files; never create broken wiki links.
+5. Make the update idempotent. If the Issue URL is already present in the marker block, update that entry instead of adding a duplicate.
+6. Keep entries ordered newest first, grouped by date. Do not include labels, Mermaid maps, or repository change inventories unless the user specifically asks for them.
+7. If the repository is unavailable or the Issue was only drafted, leave `README.md` unchanged and explain why.
+
+## Learning Map
+
+After publishing all Issues, query prior open and closed Issues for each created label. Read their titles and relevant learning sections to infer only well-supported prerequisite or follow-up relationships.
+
+Return one Mermaid `flowchart TD` per subject in the final response:
+
+```mermaid
+flowchart TD
+  A["Spring 기초: 객체와 의존성"] --> B["IoC와 DI"]
+  B --> C["Issue #42: DI로 객체 의존성 이해하기"]
+```
+
+- Use nodes and directed edges to show the hierarchy: verified prior Issue concept → current Issue → next concept.
+- Put issue numbers in nodes when available. Keep node labels short and use the Issue URL in the surrounding Markdown list, because GitHub Mermaid diagrams should not rely on interactive links.
+- Include only relationships supported by Issue content or the user's current notes. Do not add generic prerequisite nodes merely because they seem likely. If the relationship is an inference, state that below the diagram.
+- Keep separate subjects in separate diagrams; never draw artificial edges between `java`, `spring`, and `html` merely because they were studied on the same day.
+
+## Command Handling
+
+- Treat bare `$diary` as: derive subjects from the conversation, create one Issue per subject, update the Obsidian README index for every published Issue, then return the labelled learning maps.
+- Treat `$diary <text>` as: use `<text>` as additional primary evidence and combine it with the conversation.
+- If the user asks for drafts, preview the topic split, Issue drafts, and maps without publishing. When earlier Issues cannot be read, start each map with the current draft node and connect only to an explicitly stated next concept.

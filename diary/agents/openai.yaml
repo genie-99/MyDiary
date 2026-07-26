@@ -1,4 +1,4 @@
 interface:
-  display_name: "Diary"
-  short_description: "Create or update a study diary Issue from today's folder and prompts."
-  default_prompt: "Use $diary to inspect today's date folder, summarize today's study with our conversation prompts, and create or update the GitHub diary Issue."
+  display_name: "Study Diary"
+  short_description: "Publish study Issues, maps, and an Obsidian README index."
+  default_prompt: "Use $diary to publish one labelled Issue per study topic, update MyDiary's Obsidian README index, and map it to earlier learning."
