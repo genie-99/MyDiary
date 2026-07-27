@@ -39,6 +39,10 @@ $diary 오늘 학습 내용과 C:\SSAFY\workspace의 관련 수정사항을 확�
 GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 <!-- diary-index:start -->
+### IntelliJ
+
+- [#31 — 실무 코드 탐색·리팩터링·디버깅 단축키 익히기](https://github.com/genie-99/MyDiary/issues/31)
+
 ### Algorithm
 
 - [#24 — 완전 이진 트리 배열 표현과 중위 순회로 화분 번호 배치하기](https://github.com/genie-99/MyDiary/issues/24)
