@@ -53,6 +53,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Java
 
+- [#36 — LinkedList 구조와 Map 순회 뷰 이해하기](https://github.com/genie-99/MyDiary/issues/36)
 - [#27 — Optional·람다식·Stream의 함수형 인터페이스 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/27)
 - [#20 — JVM Runtime Data Areas로 메모리 구조 이해하기](https://github.com/genie-99/MyDiary/issues/20)
 - [#14 — 제네릭으로 타입 안전성과 재사용성 높이기](https://github.com/genie-99/MyDiary/issues/14)
