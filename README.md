@@ -41,6 +41,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 <!-- diary-index:start -->
 ### IntelliJ
 
+- [#40 — 일반 자동완성과 AI 인라인 코드 제안 구분하기](https://github.com/genie-99/MyDiary/issues/40)
 - [#31 — 실무 코드 탐색·리팩터링·디버깅 단축키 익히기](https://github.com/genie-99/MyDiary/issues/31)
 
 ### Algorithm
@@ -67,8 +68,13 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 - [#8 — 인터페이스 규약과 다중 구현으로 다형성 설계하기](https://github.com/genie-99/MyDiary/issues/8)
 - [#6 — 상속과 생성자 체인으로 객체 초기화 이해하기](https://github.com/genie-99/MyDiary/issues/6)
 
+### JPA
+
+- [#42 — ORM·JPA와 웹·Repository의 역할 구분하기](https://github.com/genie-99/MyDiary/issues/42)
+
 ### Spring · Gradle · Frontend · Git
 
+- [#41 — Bean 등록·컴포넌트 스캔·생성자 DI 연결하기](https://github.com/genie-99/MyDiary/issues/41)
 - [#38 — 라이브러리·JAR·의존성 관리 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/38)
 - [#26 — 회원 도메인·계층 분리·인터페이스 기반 DI 이해하기](https://github.com/genie-99/MyDiary/issues/26)
 - [#25 — XML·JSON과 @ResponseBody 메시지 변환 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/25)
