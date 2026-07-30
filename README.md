@@ -53,6 +53,8 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Java
 
+- [#39 — Annotation과 Meta Annotation 구조 이해하기](https://github.com/genie-99/MyDiary/issues/39)
+- [#37 — JSON과 Gson으로 객체 변환 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/37)
 - [#36 — LinkedList 구조와 Map 순회 뷰 이해하기](https://github.com/genie-99/MyDiary/issues/36)
 - [#27 — Optional·람다식·Stream의 함수형 인터페이스 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/27)
 - [#20 — JVM Runtime Data Areas로 메모리 구조 이해하기](https://github.com/genie-99/MyDiary/issues/20)
@@ -67,6 +69,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
+- [#38 — 라이브러리·JAR·의존성 관리 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/38)
 - [#26 — 회원 도메인·계층 분리·인터페이스 기반 DI 이해하기](https://github.com/genie-99/MyDiary/issues/26)
 - [#25 — XML·JSON과 @ResponseBody 메시지 변환 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/25)
 - [#22 — 빌드 도구·의존성·Gradle Wrapper 이해하기](https://github.com/genie-99/MyDiary/issues/22)
