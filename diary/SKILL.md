@@ -1,11 +1,11 @@
 ---
 name: diary
-description: Create topic-separated Korean study GitHub Issues with the user's meaningful work prompts, plus a README learning index, from the user's conversation and notes. Use when the user invokes `$diary`, asks for a study diary or learning retrospective, wants their learning organized into one Issue per topic with labels and learning maps, or asks to add their published study Issue links to MyDiary's README.
+description: Create topic-separated Korean study GitHub Issues with the user's meaningful work prompts, update a README learning index, and add matching entries to the Notion CodingStudy calendar. Use when the user invokes `$diary`, asks for a study diary or learning retrospective, wants their learning organized into one Issue per topic with labels and learning maps, or asks to add published study records to MyDiary or CodingStudy.
 ---
 
 # Diary
 
-Turn the user's learning into durable, topic-focused GitHub Issues with their meaningful work prompts and a README learning index. Treat the conversation as the primary evidence of what the user actually studied.
+Turn the user's learning into durable, topic-focused GitHub Issues with their meaningful work prompts, a README learning index, and matching Notion CodingStudy calendar entries. Treat the conversation as the primary evidence of what the user actually studied.
 
 ## Source of Truth
 
@@ -39,6 +39,7 @@ Turn the user's learning into durable, topic-focused GitHub Issues with their me
 8. Create each Issue with its one subject label. If GitHub Issue creation is unavailable, return every exact title, label, and body as a draft; do not claim an Issue was created.
 9. After creation, inspect earlier open and closed learning Issues with each created subject label. Build and return a Mermaid learning map for each subject that connects the new Issue to verified prior Issue concepts. If no earlier Issue exists, show the new Issue as the starting node.
 10. After every successfully published Issue, update the MyDiary repository's `README.md` learning index as described below. Do not update it for drafts or failed Issue publication.
+11. After every successfully published Issue, add a matching page to the Notion CodingStudy calendar as described below. A Notion failure must not undo or conceal a successful GitHub publication; report the two outcomes separately.
 
 ## Issue Body Template
 
@@ -98,6 +99,28 @@ After successful Issue publication, add its GitHub Issue link to the README lear
 6. Keep only Issue links in this marker block. Do not add summaries, Obsidian wiki links, Mermaid diagrams, prompts, or repository change inventories unless the user specifically asks for them.
 7. If the repository is unavailable or the Issue was only drafted, leave `README.md` unchanged and explain why.
 
+## Notion CodingStudy Calendar
+
+After each successful Issue publication, create one matching calendar page in the connected Notion workspace.
+
+1. Target the `CodingStudy` database under the `Coding` page:
+   - Database ID: `39ae65da-cd3d-8072-87eb-dad6ef5a8fd2`
+   - Data source ID: `collection://39ae65da-cd3d-808d-8c54-000b321a131a`
+   - Calendar view: `캘린더(날짜) 보기`
+2. Fetch the database before writing and confirm that it is still named `CodingStudy`, its parent is `Coding`, and the required properties still exist. Do not create a replacement database or alter its schema when validation fails.
+3. Before creating a page, query or search the data source for the same `원문 링크`. If a page already has that Issue URL, update missing or stale mapped properties instead of creating a duplicate.
+4. Map the published Issue to these properties:
+   - `이름`: the exact GitHub Issue title
+   - `date:날짜:start`: the diary run's Asia/Seoul date in `YYYY-MM-DD`
+   - `date:날짜:is_datetime`: `0`
+   - `분석 종류`: `회고`
+   - `요약`: one concise Korean sentence stating the subject's main learning outcome
+   - `원문 링크`: the GitHub Issue URL
+   - `태그`: set only existing matching options; for example, use `["Java"]` for a Java subject. Omit it when no existing option matches, and never change the database schema merely to add a tag.
+5. Keep the Notion page body empty unless the user explicitly asks to copy the full study note into Notion. The GitHub Issue remains the source document.
+6. If Notion is unavailable or disconnected, do not claim the page was created. Preserve the GitHub result and provide the exact title and properties as a Notion draft.
+7. Report the created or updated Notion page URL for every published subject.
+
 ## Learning Map
 
 After publishing all Issues, query prior open and closed Issues for each created label. Read their titles and relevant learning sections to infer only well-supported prerequisite or follow-up relationships.
@@ -117,6 +140,6 @@ flowchart TD
 
 ## Command Handling
 
-- Treat bare `$diary` as: derive subjects from the conversation, create one Issue per subject with the meaningful user prompts, add its GitHub link to the README Issue index for every published Issue, then return the labelled learning maps.
+- Treat bare `$diary` as: derive subjects from the conversation, create one Issue per subject with the meaningful user prompts, add its GitHub link to the README Issue index and a matching page to the Notion CodingStudy calendar for every published Issue, then return the labelled learning maps.
 - Treat `$diary <text>` as: use `<text>` as additional primary evidence and combine it with the conversation.
 - If the user asks for drafts, preview the topic split, Issue drafts, and maps without publishing. When earlier Issues cannot be read, start each map with the current draft node and connect only to an explicitly stated next concept.
