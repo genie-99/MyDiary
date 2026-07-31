@@ -46,6 +46,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Algorithm
 
+- [#45 — 최대 힙과 PriorityQueue 우선순위 연산 이해하기](https://github.com/genie-99/MyDiary/issues/45)
 - [#24 — 완전 이진 트리 배열 표현과 중위 순회로 화분 번호 배치하기](https://github.com/genie-99/MyDiary/issues/24)
 - [#23 — 인접 리스트와 DFS로 트리 자손 수 세기](https://github.com/genie-99/MyDiary/issues/23)
 - [#16 — HashSet으로 중복 제거 문제 해결하기](https://github.com/genie-99/MyDiary/issues/16)
@@ -54,6 +55,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Java
 
+- [#46 — Scanner·BufferedReader·StringTokenizer 입력 처리 구분하기](https://github.com/genie-99/MyDiary/issues/46)
 - [#44 — 시험 오답으로 문법·OOP·컬렉션 핵심 바로잡기](https://github.com/genie-99/MyDiary/issues/44)
 - [#39 — Annotation과 Meta Annotation 구조 이해하기](https://github.com/genie-99/MyDiary/issues/39)
 - [#37 — JSON과 Gson으로 객체 변환 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/37)
