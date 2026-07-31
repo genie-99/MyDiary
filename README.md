@@ -54,6 +54,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Java
 
+- [#44 — 시험 오답으로 문법·OOP·컬렉션 핵심 바로잡기](https://github.com/genie-99/MyDiary/issues/44)
 - [#39 — Annotation과 Meta Annotation 구조 이해하기](https://github.com/genie-99/MyDiary/issues/39)
 - [#37 — JSON과 Gson으로 객체 변환 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/37)
 - [#36 — LinkedList 구조와 Map 순회 뷰 이해하기](https://github.com/genie-99/MyDiary/issues/36)
