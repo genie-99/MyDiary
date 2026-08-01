@@ -46,6 +46,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Algorithm
 
+- [#52 — 수식 이진 트리 재귀 계산과 Node 표현 이해하기](https://github.com/genie-99/MyDiary/issues/52)
 - [#45 — 최대 힙과 PriorityQueue 우선순위 연산 이해하기](https://github.com/genie-99/MyDiary/issues/45)
 - [#24 — 완전 이진 트리 배열 표현과 중위 순회로 화분 번호 배치하기](https://github.com/genie-99/MyDiary/issues/24)
 - [#23 — 인접 리스트와 DFS로 트리 자손 수 세기](https://github.com/genie-99/MyDiary/issues/23)
@@ -55,6 +56,8 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Java
 
+- [#50 — 인터페이스 다형성과 OCP로 구현 교체 이해하기](https://github.com/genie-99/MyDiary/issues/50)
+- [#48 — JDBC·JdbcTemplate·MyBatis의 SQL 실행 역할 구분하기](https://github.com/genie-99/MyDiary/issues/48)
 - [#46 — Scanner·BufferedReader·StringTokenizer 입력 처리 구분하기](https://github.com/genie-99/MyDiary/issues/46)
 - [#44 — 시험 오답으로 문법·OOP·컬렉션 핵심 바로잡기](https://github.com/genie-99/MyDiary/issues/44)
 - [#39 — Annotation과 Meta Annotation 구조 이해하기](https://github.com/genie-99/MyDiary/issues/39)
@@ -71,12 +74,18 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 - [#8 — 인터페이스 규약과 다중 구현으로 다형성 설계하기](https://github.com/genie-99/MyDiary/issues/8)
 - [#6 — 상속과 생성자 체인으로 객체 초기화 이해하기](https://github.com/genie-99/MyDiary/issues/6)
 
+### CS
+
+- [#51 — 포인터와 Java 참조의 메모리 접근 차이 이해하기](https://github.com/genie-99/MyDiary/issues/51)
+
 ### JPA
 
+- [#49 — ORM·Hibernate·Spring Data JPA 프록시 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/49)
 - [#42 — ORM·JPA와 웹·Repository의 역할 구분하기](https://github.com/genie-99/MyDiary/issues/42)
 
 ### Spring · Gradle · Frontend · Git
 
+- [#47 — MVC 요청 매핑과 트랜잭션 설정 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/47)
 - [#41 — Bean 등록·컴포넌트 스캔·생성자 DI 연결하기](https://github.com/genie-99/MyDiary/issues/41)
 - [#38 — 라이브러리·JAR·의존성 관리 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/38)
 - [#26 — 회원 도메인·계층 분리·인터페이스 기반 DI 이해하기](https://github.com/genie-99/MyDiary/issues/26)
