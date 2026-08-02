@@ -1,4 +1,12 @@
 interface:
   display_name: "Study Diary"
-  short_description: "Publish study Issues and add them to CodingStudy."
-  default_prompt: "Use $diary to publish one labelled Issue per study topic, include my work prompts, add its link to MyDiary's README and Notion CodingStudy calendar, and map it to earlier learning."
+  short_description: "Publish Issues and full Notion review notes."
+  default_prompt: "Use $diary to publish one labelled Issue per study topic, index it in MyDiary, copy its complete body into Notion CodingStudy for review, and map it to earlier learning."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "notion"
+      description: "Notion MCP server for CodingStudy calendar pages and full review-note bodies."
+      transport: "streamable_http"
+      url: "https://mcp.notion.com/mcp"
