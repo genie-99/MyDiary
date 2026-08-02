@@ -39,6 +39,10 @@ $diary 오늘 학습 내용과 C:\SSAFY\workspace의 관련 수정사항을 확�
 GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 <!-- diary-index:start -->
+### SQL
+
+- [#53 — CRUD·데이터 타입·무결성 제약조건 이해하기](https://github.com/genie-99/MyDiary/issues/53)
+
 ### IntelliJ
 
 - [#40 — 일반 자동완성과 AI 인라인 코드 제안 구분하기](https://github.com/genie-99/MyDiary/issues/40)
