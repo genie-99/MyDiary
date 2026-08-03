@@ -41,6 +41,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 <!-- diary-index:start -->
 ### SQL
 
+- [#55 — 조건 조회·정렬·페이징과 NULL 처리 익히기](https://github.com/genie-99/MyDiary/issues/55)
 - [#54 — 관계 설계와 안전한 데이터 변경 이해하기](https://github.com/genie-99/MyDiary/issues/54)
 - [#53 — CRUD·데이터 타입·무결성 제약조건 이해하기](https://github.com/genie-99/MyDiary/issues/53)
 
