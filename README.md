@@ -82,6 +82,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### CS
 
+- [#56 — 기술면접을 위한 CS 전체 학습 지도 세우기](https://github.com/genie-99/MyDiary/issues/56)
 - [#51 — 포인터와 Java 참조의 메모리 접근 차이 이해하기](https://github.com/genie-99/MyDiary/issues/51)
 
 ### JPA
