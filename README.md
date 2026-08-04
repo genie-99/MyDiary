@@ -39,6 +39,10 @@ $diary 오늘 학습 내용과 C:\SSAFY\workspace의 관련 수정사항을 확�
 GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 <!-- diary-index:start -->
+### Python
+
+- [#58 — 자료형과 컬렉션에서 동적 타입까지 Python 기초 이해하기](https://github.com/genie-99/MyDiary/issues/58)
+
 ### SQL
 
 - [#55 — 조건 조회·정렬·페이징과 NULL 처리 익히기](https://github.com/genie-99/MyDiary/issues/55)
