@@ -1,6 +1,6 @@
 ---
 name: diary
-description: Create or extend date-and-topic Korean study GitHub Issues with the user's meaningful work prompts, update a README learning index, and write detailed subject-tagged review notes in the Notion CodingStudy calendar. Reuse an existing same-date Issue with the same subject label instead of creating a duplicate. Use when the user invokes `$diary`, asks for a study diary or learning retrospective, wants learning organized into labelled Issues and learning maps, or asks to add study records to MyDiary or CodingStudy.
+description: Create or extend date-and-topic Korean study GitHub Issues with the user's meaningful work prompts, update a README learning index, and write detailed subject-tagged Notion CodingStudy reviews that combine conceptual explanations, relevant code examples, and code-flow walkthroughs. Reuse an existing same-date Issue with the same subject label instead of creating a duplicate. Use when the user invokes `$diary`, asks for a study diary or learning retrospective, wants learning organized into labelled Issues and learning maps, or asks to add study records to MyDiary or CodingStudy.
 ---
 
 # Diary
@@ -132,9 +132,9 @@ After each successful Issue creation or update, create or update one matching ca
    - Otherwise add the bracketed human-readable subject as a new `태그` multi-select option. Preserve every existing option and its color; never drop, rename, or repurpose unrelated options while adding the subject.
    - If the schema tool requires redefining the complete multi-select option list, reconstruct all current options unchanged and append only the new subject option. If safe preservation cannot be guaranteed, do not modify the schema or page; report the Notion result as a draft with the required tag.
    - Existing diary pages found by `원문 링크` must replace stale generic or multi-value `태그` values with exactly the current subject tag, while leaving `분석 종류` unchanged.
-8. Write a dedicated Korean review document instead of copying the GitHub Issue body verbatim. Expand only verified studied material from the conversation and Issue:
+8. Write a dedicated Korean review document instead of copying the GitHub Issue body verbatim. Expand only verified studied material from the conversation and Issue. For programming or other code-based learning, explain the concept in prose and place relevant code directly beside that explanation:
 
-   ```md
+   ````md
    ## 학습 개요
    {무엇을 공부했고 개념들이 어떻게 연결되는지 설명}
 
@@ -142,20 +142,34 @@ After each successful Issue creation or update, create or update one matching ca
    ### {개념 이름}
    {정의, 작동 원리, 필요한 이유를 완전한 문장으로 자세히 설명}
 
+   #### 코드로 확인하기
+   ```{language}
+   {사용자가 다룬 내용을 보여 주는 최소한의 실행 가능한 코드}
+   ```
+
+   {입력값이 어떤 객체가 되고, 각 줄이 어떤 순서로 실행되며, 결과나 오류가 왜 발생하는지 해설}
+
    ## 예시와 적용
-   {사용자가 다룬 코드, 명령, 연습 또는 오류를 개념과 연결해 설명}
+   {사용자가 다룬 코드, 명령, 연습 또는 오류를 완성된 예제로 구성하고 실행 흐름과 결과를 설명}
 
    ## 헷갈리기 쉬운 점
    {대화에서 구분한 유사 개념, 오해, 주의점}
 
    ## 핵심 복습
    - {나중에 다시 읽었을 때 기억해야 할 핵심}
-   ```
+   ````
 
-   - Do not merely expand each Issue bullet with filler. Explain definitions, cause and effect, relationships, concrete examples, and observed errors in enough detail for later self-study.
+   - Do not merely expand each Issue bullet with filler or produce a catalog of definitions. Build a connected explanation that answers what the concept is, why it behaves that way, how it relates to the surrounding concepts, and when it is used.
+   - When the verified learning contains programming code, include at least one fenced code block for every materially different major concept group. Keep trivial variations together instead of creating repetitive snippets.
+   - Introduce every code block with the idea it demonstrates. After the block, walk through the important lines in execution order and state the expected result or error. Never leave a code block unexplained.
+   - Prefer minimal, executable examples based on the user's own exercise. Correct syntax and naming mistakes while explicitly explaining the original mistake and why the correction works.
+   - Use the language identifier on fenced blocks, such as `python`, `java`, `sql`, `javascript`, or `bash`. Include sample output only when it materially helps understanding, and distinguish output from source code.
+   - Connect code to the conceptual model. For example, do not only show `response.json()`; explain that the method parses the response body and creates Python `list` and `dict` objects that subsequent indexing operates on.
+   - For a conceptual topic without meaningful code, use a concrete scenario, command, request/response example, table, or execution trace instead of inventing irrelevant code.
+   - Keep the final `핵심 복습` short. Put the teaching detail in the prose, code, and walkthrough sections rather than hiding the explanation in a long bullet list.
    - Include only material supported by the conversation, user notes, exercises, or published Issue. Do not turn inferred advanced material into completed learning.
    - Omit workflow sections such as `대화에서 확인한 학습 근거`, `사용한 프롬프트`, `심화 확장`, and `다음 학습` unless the user explicitly asks for them in Notion.
-   - Preserve useful headings, lists, and code blocks with supported Notion Markdown.
+   - Preserve useful headings, lists, and code blocks with supported Notion Markdown. For code-based study, a page that contains only prose, only code, or a list of concepts is incomplete unless the user explicitly requests that format.
    - Keep `원문 링크` as a separate provenance property; never use the URL as the page body or create a link-only body.
    - Before updating an existing page, fetch its body. Synchronize the review sections without duplicating them and never delete user-authored blocks. For a legacy page containing an exact AI-synchronized Issue copy, replace only that synchronized copy when it can be identified confidently; otherwise preserve it and add or update one `복습 정리` section.
    - Leave the page body empty or summary-only only when the user explicitly requests it. The GitHub Issue is the source record and Notion is the detailed review document.
