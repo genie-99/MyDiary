@@ -41,7 +41,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 <!-- diary-index:start -->
 ### Python
 
-- [#58 — 자료형과 컬렉션에서 동적 타입까지 Python 기초 이해하기](https://github.com/genie-99/MyDiary/issues/58)
+- [#58 — 기초 문법에서 HTTP API 호출까지 연결하기](https://github.com/genie-99/MyDiary/issues/58)
 
 ### SQL
 
@@ -114,6 +114,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
+- [#59 — Context·RAG·Agent에서 Responses API까지 연결하기](https://github.com/genie-99/MyDiary/issues/59)
 - [#17 — LLM·RAG·Agentic AI 작동 구조 이해하기](https://github.com/genie-99/MyDiary/issues/17)
 - [#3 — 공유 가능한 $diary 스킬과 Issue 워크플로 만들기](https://github.com/genie-99/MyDiary/issues/3)
 - [#2 — 학습 기록을 남기는 $diary 스킬 설계하기](https://github.com/genie-99/MyDiary/issues/2)
