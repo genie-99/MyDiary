@@ -41,7 +41,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 <!-- diary-index:start -->
 ### Python
 
-- [#58 — 기초 문법·HTTP API에서 NumPy 배열 연산까지 연결하기](https://github.com/genie-99/MyDiary/issues/58)
+- [#58 — 기초 문법·HTTP API·NumPy에서 pandas 데이터 분석까지 연결하기](https://github.com/genie-99/MyDiary/issues/58)
 
 ### SQL
 
