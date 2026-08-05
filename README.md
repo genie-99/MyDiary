@@ -116,7 +116,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#62 — Feature·참함수·가설공간에서 회귀·분류 평가와 일반화까지 연결하기](https://github.com/genie-99/MyDiary/issues/62)
+- [#62 — 지도학습 기초에서 회귀·분류 평가와 교차검증까지 연결하기](https://github.com/genie-99/MyDiary/issues/62)
 - [#59 — Context·RAG·Agent에서 Responses API까지 연결하기](https://github.com/genie-99/MyDiary/issues/59)
 - [#17 — LLM·RAG·Agentic AI 작동 구조 이해하기](https://github.com/genie-99/MyDiary/issues/17)
 - [#3 — 공유 가능한 $diary 스킬과 Issue 워크플로 만들기](https://github.com/genie-99/MyDiary/issues/3)
