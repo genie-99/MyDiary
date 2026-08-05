@@ -57,6 +57,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Algorithm
 
+- [#61 — 달팽이 배열의 방향 전환·경계 조건과 반복문 오류 바로잡기](https://github.com/genie-99/MyDiary/issues/61)
 - [#52 — 수식 이진 트리 재귀 계산과 Node 표현 이해하기](https://github.com/genie-99/MyDiary/issues/52)
 - [#45 — 최대 힙과 PriorityQueue 우선순위 연산 이해하기](https://github.com/genie-99/MyDiary/issues/45)
 - [#24 — 완전 이진 트리 배열 표현과 중위 순회로 화분 번호 배치하기](https://github.com/genie-99/MyDiary/issues/24)
