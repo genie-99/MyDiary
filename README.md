@@ -119,7 +119,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#66 — 선형·로지스틱 회귀에서 얕은·깊은 신경망까지 연결하기](https://github.com/genie-99/MyDiary/issues/66)
+- [#66 — 회귀·신경망에서 경사하강·역전파까지 연결하기](https://github.com/genie-99/MyDiary/issues/66)
 - [#62 — 지도학습 평가에서 교차검증·비지도 군집화까지 연결하기](https://github.com/genie-99/MyDiary/issues/62)
 - [#59 — Context·RAG·Agent에서 Responses API까지 연결하기](https://github.com/genie-99/MyDiary/issues/59)
 - [#17 — LLM·RAG·Agentic AI 작동 구조 이해하기](https://github.com/genie-99/MyDiary/issues/17)
