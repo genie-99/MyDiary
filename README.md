@@ -120,7 +120,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#68 — sklearn 전처리·분류 검증에서 PCA·KMeans까지 연결하기](https://github.com/genie-99/MyDiary/issues/68)
+- [#68 — sklearn 검증에서 PyTorch 신경망·MNIST DataLoader까지 연결하기](https://github.com/genie-99/MyDiary/issues/68)
 - [#66 — 회귀·신경망에서 경사하강·역전파까지 연결하기](https://github.com/genie-99/MyDiary/issues/66)
 - [#62 — 지도학습 평가에서 교차검증·비지도 군집화까지 연결하기](https://github.com/genie-99/MyDiary/issues/62)
 - [#59 — Context·RAG·Agent에서 Responses API까지 연결하기](https://github.com/genie-99/MyDiary/issues/59)
