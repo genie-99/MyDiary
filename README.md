@@ -103,7 +103,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
-- [#69 — 웹 서버·WAS와 서블릿·스레드 요청 처리 이해하기](https://github.com/genie-99/MyDiary/issues/69)
+- [#69 — 웹 서버·서블릿 스레드에서 SSR·CSR까지 연결하기](https://github.com/genie-99/MyDiary/issues/69)
 - [#47 — MVC 요청 매핑과 트랜잭션 설정 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/47)
 - [#41 — Bean 등록·컴포넌트 스캔·생성자 DI 연결하기](https://github.com/genie-99/MyDiary/issues/41)
 - [#38 — 라이브러리·JAR·의존성 관리 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/38)
