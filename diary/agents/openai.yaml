@@ -1,7 +1,7 @@
 interface:
   display_name: "Study Diary"
-  short_description: "Publish Issues and explained code-based Notion reviews."
-  default_prompt: "Use $diary to publish one labelled Issue per study topic, index it in MyDiary, write a detailed Notion CodingStudy review that pairs concept explanations with relevant code and execution walkthroughs, and map it to earlier learning."
+  short_description: "Publish Issues and layered, beginner-friendly reviews."
+  default_prompt: "Use $diary to publish one labelled Issue per study topic, index it in MyDiary, write a layered Notion CodingStudy review with a key summary, connected flow, plain-language explanations, examples, execution walkthroughs, and misconception corrections, and map it to earlier learning."
 
 dependencies:
   tools:
