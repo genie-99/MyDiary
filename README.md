@@ -103,6 +103,8 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
+- [#71 — 서버·Tomcat·JAR/WAR에서 HTTP 학습 방향 잡기](https://github.com/genie-99/MyDiary/issues/71)
+- [#70 — JDK·Gradle JVM과 Java Toolchain 역할 구분하기](https://github.com/genie-99/MyDiary/issues/70)
 - [#69 — 서블릿 스레드부터 MVC·SSR·WebFlux까지 연결하기](https://github.com/genie-99/MyDiary/issues/69)
 - [#47 — MVC 요청 매핑과 트랜잭션 설정 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/47)
 - [#41 — Bean 등록·컴포넌트 스캔·생성자 DI 연결하기](https://github.com/genie-99/MyDiary/issues/41)
