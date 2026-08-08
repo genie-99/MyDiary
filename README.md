@@ -91,7 +91,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### CS
 
-- [#72 — IP·TCP/UDP·Port·DNS에서 URI·웹 요청까지 연결하기](https://github.com/genie-99/MyDiary/issues/72)
+- [#72 — 네트워크 기초에서 HTTP 특성·메시지 구조까지 연결하기](https://github.com/genie-99/MyDiary/issues/72)
 - [#63 — 스택 포인터와 동기·비동기 인터럽트 처리 흐름 바로잡기](https://github.com/genie-99/MyDiary/issues/63)
 - [#57 — 데이터·명령어부터 CPU 핵심 부품과 저장장치 계층까지 이해하기](https://github.com/genie-99/MyDiary/issues/57)
 - [#56 — 기술면접을 위한 CS 전체 학습 지도 세우기](https://github.com/genie-99/MyDiary/issues/56)
