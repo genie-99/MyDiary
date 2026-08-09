@@ -53,6 +53,10 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 - [#54 — 관계 설계와 안전한 데이터 변경 이해하기](https://github.com/genie-99/MyDiary/issues/54)
 - [#53 — CRUD·데이터 타입·무결성 제약조건 이해하기](https://github.com/genie-99/MyDiary/issues/53)
 
+### 빅분기
+
+- [#75 — 데이터 이해에서 플랫폼·AI·개인정보 보호까지 연결하기](https://github.com/genie-99/MyDiary/issues/75)
+
 ### IntelliJ
 
 - [#40 — 일반 자동완성과 AI 인라인 코드 제안 구분하기](https://github.com/genie-99/MyDiary/issues/40)
