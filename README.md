@@ -92,7 +92,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### CS
 
-- [#74 — CPU 병렬 처리에서 메모리·RAID·DMA까지 연결하기](https://github.com/genie-99/MyDiary/issues/74)
+- [#74 — 컴퓨터 구조에서 프로세스 동기화·교착상태까지 연결하기](https://github.com/genie-99/MyDiary/issues/74)
 - [#72 — 네트워크 기초에서 HTTP 데이터 전송·API 설계까지 연결하기](https://github.com/genie-99/MyDiary/issues/72)
 - [#63 — 스택 포인터와 동기·비동기 인터럽트 처리 흐름 바로잡기](https://github.com/genie-99/MyDiary/issues/63)
 - [#57 — 데이터·명령어부터 CPU 핵심 부품과 저장장치 계층까지 이해하기](https://github.com/genie-99/MyDiary/issues/57)
