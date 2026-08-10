@@ -105,6 +105,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### HTTP
 
+- [#78 — 헤더·콘텐츠 협상·전송 방식과 쿠키 이해하기](https://github.com/genie-99/MyDiary/issues/78)
 - [#76 — 상태 코드와 리다이렉션·PRG 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/76)
 
 ### JPA
