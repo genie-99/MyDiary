@@ -134,7 +134,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#77 — 워드 임베딩에서 RNN·LSTM의 장기 기억까지 연결하기](https://github.com/genie-99/MyDiary/issues/77)
+- [#77 — 워드 임베딩에서 RNN·LSTM·Seq2Seq·Attention까지 연결하기](https://github.com/genie-99/MyDiary/issues/77)
 - [#68 — sklearn 검증에서 MNIST 신경망 학습·저장·추론까지 연결하기](https://github.com/genie-99/MyDiary/issues/68)
 - [#66 — 회귀·신경망에서 경사하강·역전파까지 연결하기](https://github.com/genie-99/MyDiary/issues/66)
 - [#62 — 지도학습 평가에서 교차검증·비지도 군집화까지 연결하기](https://github.com/genie-99/MyDiary/issues/62)
