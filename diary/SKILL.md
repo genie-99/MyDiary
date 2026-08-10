@@ -127,12 +127,12 @@ After each successful Issue creation or update, create or update one matching ca
    - `태그`: exactly one human-readable study-subject option derived from the bracketed Issue subject, such as `["SQL"]`, `["CS"]`, `["Java"]`, `["Spring"]`, `["JPA"]`, or `["AI"]`
    - Page icon: set an emoji separately from the database properties when creating a page. Use the stable subject mapping `AI → 🤖`, `Spring → 🌱`, `Java → ☕`, `Python → 🐍`, `CS → 🧠`, `Testing → 🧪`, `HTML/CSS/JavaScript/Web → 🌐`, and `SQL/JPA/Database → 🗄️`; use `📚` for an unmapped study subject. When updating, preserve a user-chosen icon and fill the icon only when it is absent or clearly AI-managed.
 5. Keep the date only in the `날짜` property so the page appears on the correct calendar date. Never repeat the date in the Notion page title.
-6. Use only the subject in `태그`. Never add generic workflow or document-type values such as `개념정리`, `회고`, `학습`, or `diary`, and do not set or synchronize `분석 종류` as part of the diary workflow.
+6. Use only the subject in `태그`. Never add generic workflow or document-type values such as `개념정리`, `회고`, `학습`, or `diary`. Keep `분석 종류` empty on diary-created pages and never populate it as part of the diary workflow. When a matching existing page has exactly `분석 종류: 개념정리` from an earlier diary run, clear that value to `null`; preserve every other existing `분석 종류` value unless the user explicitly asks to change it.
 7. Ensure the subject tag exists before creating or updating the page:
    - Match existing tag options case-insensitively and reuse their exact stored spelling when the subject is already present.
    - Otherwise add the bracketed human-readable subject as a new `태그` multi-select option. Preserve every existing option and its color; never drop, rename, or repurpose unrelated options while adding the subject.
    - If the schema tool requires redefining the complete multi-select option list, reconstruct all current options unchanged and append only the new subject option. If safe preservation cannot be guaranteed, do not modify the schema or page; report the Notion result as a draft with the required tag.
-   - Existing diary pages found by `원문 링크` must replace stale generic or multi-value `태그` values with exactly the current subject tag, while leaving `분석 종류` unchanged.
+   - Existing diary pages found by `원문 링크` must replace stale generic or multi-value `태그` values with exactly the current subject tag. Apply the `개념정리` cleanup rule above to `분석 종류`; otherwise leave that property unchanged.
 8. Write a dedicated Korean teaching document instead of copying the GitHub Issue body verbatim. Expand only verified studied material from the conversation and Issue. Organize it in layers so a later reader can first recover the core quickly and then understand the details without the original conversation:
 
    ````md
