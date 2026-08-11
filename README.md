@@ -114,6 +114,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Java
 
+- [#81 — 멀티태스킹에서 프로세스·스레드와 작업 유형까지 연결하기](https://github.com/genie-99/MyDiary/issues/81)
 - [#73 — Stream 파이프라인과 함수형 데이터 처리 이해하기](https://github.com/genie-99/MyDiary/issues/73)
 - [#50 — 인터페이스 다형성과 OCP로 구현 교체 이해하기](https://github.com/genie-99/MyDiary/issues/50)
 - [#48 — JDBC·JdbcTemplate·MyBatis의 SQL 실행 역할 구분하기](https://github.com/genie-99/MyDiary/issues/48)
