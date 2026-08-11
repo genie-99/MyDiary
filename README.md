@@ -135,7 +135,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#79 — 토큰화에서 문장 임베딩·유사도 검색까지 실습하기](https://github.com/genie-99/MyDiary/issues/79)
+- [#79 — 토큰화·임베딩에서 파운데이션 모델과 정렬 학습까지 연결하기](https://github.com/genie-99/MyDiary/issues/79)
 - [#77 — 워드 임베딩·RNN에서 Transformer와 사전학습 모델까지 연결하기](https://github.com/genie-99/MyDiary/issues/77)
 - [#68 — sklearn 검증에서 MNIST 신경망 학습·저장·추론까지 연결하기](https://github.com/genie-99/MyDiary/issues/68)
 - [#66 — 회귀·신경망에서 경사하강·역전파까지 연결하기](https://github.com/genie-99/MyDiary/issues/66)
