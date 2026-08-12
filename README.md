@@ -177,7 +177,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#79 — 토큰화·파운데이션 모델에서 디코딩·프롬프트·정렬까지 연결하기](https://github.com/genie-99/MyDiary/issues/79)
+- [#79 — 토큰화부터 파운데이션 모델의 생성·평가·합성 데이터·안전까지 연결하기](https://github.com/genie-99/MyDiary/issues/79)
 - [#77 — 워드 임베딩·RNN에서 Transformer와 사전학습 모델까지 연결하기](https://github.com/genie-99/MyDiary/issues/77)
 - [#68 — sklearn 검증에서 MNIST 신경망 학습·저장·추론까지 연결하기](https://github.com/genie-99/MyDiary/issues/68)
 - [#66 — 회귀·신경망에서 경사하강·역전파까지 연결하기](https://github.com/genie-99/MyDiary/issues/66)
