@@ -181,6 +181,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
+- [#88 — CNN의 특징 추출·수용영역과 모델 변천사 이해하기](https://github.com/genie-99/MyDiary/issues/88)
 - [#83 — TorchVision 데이터 증강·합성 데이터와 LLM Judge 품질 필터링](https://github.com/genie-99/MyDiary/issues/83)
 - [#79 — 토큰화부터 파운데이션 모델의 생성·평가·합성 데이터·안전까지 연결하기](https://github.com/genie-99/MyDiary/issues/79)
 - [#77 — 워드 임베딩·RNN에서 Transformer와 사전학습 모델까지 연결하기](https://github.com/genie-99/MyDiary/issues/77)
