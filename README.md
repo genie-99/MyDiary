@@ -116,7 +116,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Java
 
-- [#90 — join으로 작업 완료 대기와 인스턴스 결과 조회 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/90)
+- [#90 — join과 volatile 플래그로 작업 대기·중단 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/90)
 - [#89 — Thread 상태 전이와 Runnable 예외 계약·작업 완료 대기 문제 이해하기](https://github.com/genie-99/MyDiary/issues/89)
 - [#87 — Thread 생성·실행부터 기본 정보와 생명주기 상태까지 이해하기](https://github.com/genie-99/MyDiary/issues/87)
 - [#86 — Reflection·Annotation의 등장 배경부터 런타임 검증·라우팅까지 이해하기](https://github.com/genie-99/MyDiary/issues/86)
