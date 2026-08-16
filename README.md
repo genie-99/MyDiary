@@ -116,6 +116,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Java
 
+- [#91 — interrupt 상태와 yield로 협력적 종료·CPU 양보 이해하기](https://github.com/genie-99/MyDiary/issues/91)
 - [#90 — join·interrupt·동시성 큐로 스레드 제어 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/90)
 - [#89 — Thread 상태 전이와 Runnable 예외 계약·작업 완료 대기 문제 이해하기](https://github.com/genie-99/MyDiary/issues/89)
 - [#87 — Thread 생성·실행부터 기본 정보와 생명주기 상태까지 이해하기](https://github.com/genie-99/MyDiary/issues/87)
