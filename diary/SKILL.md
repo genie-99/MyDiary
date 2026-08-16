@@ -74,6 +74,16 @@ Turn the user's learning into durable, topic-focused GitHub Issues with their me
 - Do not include unrelated repository work simply because it happened on the same date.
 - Use actual user wording only when a short quote preserves an important distinction; otherwise paraphrase it.
 
+## Paragraph Spacing and Readability
+
+- Normalize rough notes into naturally spaced Korean without changing the user's meaning. Correct missing spaces between words, sentences, English terms, and Korean particles when needed for readability.
+- Keep one main idea per paragraph. Start a new paragraph when the concept, cause, example, execution result, misconception correction, or next step changes.
+- In GitHub Markdown and other ordinary Markdown outputs, place one blank line between a heading and its following block, between separate paragraphs, and between a paragraph and a list, code block, table, callout, or diagram.
+- Keep items in the same simple list together. Do not insert blank lines between every short list item, but separate the list from the surrounding paragraphs with one blank line.
+- Prefer short explanatory paragraphs of roughly two to four sentences. Split a dense wall of text before adding more formatting or bullets.
+- Use spacing to reveal the teaching flow, not for decoration. Normally use one blank line rather than several consecutive empty lines.
+- In Notion, express each logical paragraph as a separate paragraph block and use `---` between major stages when helpful. Ordinary empty Markdown lines are stripped, so use `<empty-block/>` only when a deliberate visual pause materially improves understanding.
+
 ## GitHub Issue Handling
 
 1. Confirm that `gh` is available, authenticated, and points to the intended repository. If it cannot be confirmed, provide drafts instead of publishing.
@@ -199,6 +209,7 @@ After each successful Issue creation or update, create or update one matching ca
 
    - Treat the template as a teaching order, not a requirement to create empty headings. Repeat the numbered concept section for each materially different concept, and omit `입력·상태·출력`, `코드로 확인하기`, `결과 해석`, or `추가로 알아둘 점` when the verified learning does not support it.
    - Begin with the short `오늘의 핵심` callout, then move from overview to detail. Make the first one or two screenfuls reveal the topic, the central distinction, and the overall flow before presenting long explanations.
+   - Preserve visible breathing room throughout the review. Split prose into separate paragraph blocks whenever the explanation moves from definition to reason, from reason to example, or from result to correction; do not compress a whole concept into one oversized paragraph.
    - Use this visual grammar consistently. It is based on the reference CodingStudy review and gives each icon one job:
      - `💡` with `blue_bg`: the opening core summary or a central insight.
      - `🧭` with `blue_bg`: a conceptual boundary or directional distinction, such as which denominator or execution path to follow.
