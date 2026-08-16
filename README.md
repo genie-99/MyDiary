@@ -144,6 +144,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### CS
 
+- [#92 — CPU 버스트와 스케줄링 알고리즘·Linux 정책 연결하기](https://github.com/genie-99/MyDiary/issues/92)
 - [#74 — 컴퓨터 구조에서 프로세스 동기화·교착상태까지 연결하기](https://github.com/genie-99/MyDiary/issues/74)
 - [#72 — 네트워크 기초에서 HTTP 데이터 전송·API 설계까지 연결하기](https://github.com/genie-99/MyDiary/issues/72)
 - [#63 — 스택 포인터와 동기·비동기 인터럽트 처리 흐름 바로잡기](https://github.com/genie-99/MyDiary/issues/63)
