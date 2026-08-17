@@ -116,7 +116,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Java
 
-- [#93 — synchronized 모니터 락과 임계 영역 실행 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/93)
+- [#93 — synchronized 모니터 락과 임계 영역 범위 최적화 이해하기](https://github.com/genie-99/MyDiary/issues/93)
 - [#91 — interrupt·volatile·synchronized로 스레드 제어와 공유 상태 이해하기](https://github.com/genie-99/MyDiary/issues/91)
 - [#90 — join·interrupt·동시성 큐로 스레드 제어 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/90)
 - [#89 — Thread 상태 전이와 Runnable 예외 계약·작업 완료 대기 문제 이해하기](https://github.com/genie-99/MyDiary/issues/89)
