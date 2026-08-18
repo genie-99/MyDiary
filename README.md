@@ -105,6 +105,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Algorithm
 
+- [#96 — 격자 DFS로 치즈 연결 요소 세기와 인덱스 오류 바로잡기](https://github.com/genie-99/MyDiary/issues/96)
 - [#61 — 달팽이 배열의 방향 전환·경계 조건과 반복문 오류 바로잡기](https://github.com/genie-99/MyDiary/issues/61)
 - [#52 — 수식 이진 트리 재귀 계산과 Node 표현 이해하기](https://github.com/genie-99/MyDiary/issues/52)
 - [#45 — 최대 힙과 PriorityQueue 우선순위 연산 이해하기](https://github.com/genie-99/MyDiary/issues/45)
@@ -186,7 +187,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#95 — CNN 원리·MNIST에서 TorchVision·ResNet·Linear Probing까지 연결하기](https://github.com/genie-99/MyDiary/issues/95)
+- [#95 — PyTorch·ResNet 학습에서 파운데이션 모델·CLIP까지 연결하기](https://github.com/genie-99/MyDiary/issues/95)
 - [#88 — CNN 계열에서 RNN·Attention·ViT까지 데이터 구조와 모델 변천 이해하기](https://github.com/genie-99/MyDiary/issues/88)
 - [#83 — TorchVision 데이터 증강·합성 데이터와 LLM Judge 품질 필터링](https://github.com/genie-99/MyDiary/issues/83)
 - [#79 — 토큰화부터 파운데이션 모델의 생성·평가·합성 데이터·안전까지 연결하기](https://github.com/genie-99/MyDiary/issues/79)
