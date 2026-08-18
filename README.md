@@ -186,7 +186,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#95 — 영상처리에서 CNN 채널·MNIST 학습 흐름까지 이해하기](https://github.com/genie-99/MyDiary/issues/95)
+- [#95 — CNN 원리·MNIST에서 TorchVision·ResNet·Linear Probing까지 연결하기](https://github.com/genie-99/MyDiary/issues/95)
 - [#88 — CNN 계열에서 RNN·Attention·ViT까지 데이터 구조와 모델 변천 이해하기](https://github.com/genie-99/MyDiary/issues/88)
 - [#83 — TorchVision 데이터 증강·합성 데이터와 LLM Judge 품질 필터링](https://github.com/genie-99/MyDiary/issues/83)
 - [#79 — 토큰화부터 파운데이션 모델의 생성·평가·합성 데이터·안전까지 연결하기](https://github.com/genie-99/MyDiary/issues/79)
