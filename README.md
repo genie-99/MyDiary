@@ -105,6 +105,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Algorithm
 
+- [#99 — 다익스트라와 우선순위 큐로 최단 경로 계산하기](https://github.com/genie-99/MyDiary/issues/99)
 - [#96 — 격자 DFS로 치즈 연결 요소 세기와 인덱스 오류 바로잡기](https://github.com/genie-99/MyDiary/issues/96)
 - [#61 — 달팽이 배열의 방향 전환·경계 조건과 반복문 오류 바로잡기](https://github.com/genie-99/MyDiary/issues/61)
 - [#52 — 수식 이진 트리 재귀 계산과 Node 표현 이해하기](https://github.com/genie-99/MyDiary/issues/52)
