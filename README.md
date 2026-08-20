@@ -191,7 +191,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#102 — 정보 검색·RAG에서 LLM Agent·Tool Learning·MCP까지 연결하기](https://github.com/genie-99/MyDiary/issues/102)
+- [#102 — IR·RAG에서 LLM Agent의 환경·계획·Tool·MCP·LangChain까지 연결하기](https://github.com/genie-99/MyDiary/issues/102)
 - [#98 — RNN 한계에서 Transformer 기반 멀티모달 실습까지 연결하기](https://github.com/genie-99/MyDiary/issues/98)
 - [#95 — PyTorch·ResNet에서 VLM·온디바이스·생성형 비전까지 연결하기](https://github.com/genie-99/MyDiary/issues/95)
 - [#88 — CNN 계열에서 RNN·Attention·ViT까지 데이터 구조와 모델 변천 이해하기](https://github.com/genie-99/MyDiary/issues/88)
