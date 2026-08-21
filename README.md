@@ -191,7 +191,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#103 — 키워드 검색에서 청킹·Vector Store·LangGraph RAG까지 구현하기](https://github.com/genie-99/MyDiary/issues/103)
+- [#103 — 키워드 검색에서 청킹·Vector Store·LangGraph RAG 구축 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/103)
 - [#102 — IR·RAG에서 LLM Agent의 환경·계획·Tool·MCP·LangChain까지 연결하기](https://github.com/genie-99/MyDiary/issues/102)
 - [#98 — RNN 한계에서 Transformer 기반 멀티모달 실습까지 연결하기](https://github.com/genie-99/MyDiary/issues/98)
 - [#95 — PyTorch·ResNet에서 VLM·온디바이스·생성형 비전까지 연결하기](https://github.com/genie-99/MyDiary/issues/95)
