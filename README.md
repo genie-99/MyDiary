@@ -169,7 +169,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
-- [#104 — AppConfig와 생성자 주입으로 DIP·OCP 회복하기](https://github.com/genie-99/MyDiary/issues/104)
+- [#104 — AppConfig로 SRP·DIP·OCP와 IoC·DI·Spring 컨테이너 연결하기](https://github.com/genie-99/MyDiary/issues/104)
 - [#100 — 회원 가입부터 주문 생성·출력까지 객체 협력과 구현 의존 추적하기](https://github.com/genie-99/MyDiary/issues/100)
 - [#97 — EJB에서 다형성·SOLID·POJO·IoC/DI와 Spring Boot까지 연결하기](https://github.com/genie-99/MyDiary/issues/97)
 - [#71 — 서버·Tomcat·JAR/WAR에서 HTTP 학습 방향 잡기](https://github.com/genie-99/MyDiary/issues/71)
