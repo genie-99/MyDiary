@@ -94,6 +94,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### 빅분기
 
+- [#107 — 데이터 정제에서 변수 선택·차원 축소와 불균형 대응까지 연결하기](https://github.com/genie-99/MyDiary/issues/107)
 - [#85 — 데이터 수집·변환에서 분산 저장과 NoSQL 선택까지 연결하기](https://github.com/genie-99/MyDiary/issues/85)
 - [#82 — 분석 기획·방법론에서 데이터 확보와 프로젝트 관리까지 연결하기](https://github.com/genie-99/MyDiary/issues/82)
 - [#75 — 데이터 이해에서 플랫폼·AI·개인정보 보호까지 연결하기](https://github.com/genie-99/MyDiary/issues/75)
