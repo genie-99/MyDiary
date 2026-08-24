@@ -148,6 +148,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### CS
 
+- [#110 — 파일 디스크립터부터 inode·블록 할당·마운트까지 연결하기](https://github.com/genie-99/MyDiary/issues/110)
 - [#101 — 논리 주소 변환부터 요구 페이징·페이지 교체까지 연결하기](https://github.com/genie-99/MyDiary/issues/101)
 - [#92 — CPU 버스트와 스케줄링 알고리즘·Linux 정책 연결하기](https://github.com/genie-99/MyDiary/issues/92)
 - [#74 — 컴퓨터 구조에서 프로세스 동기화·교착상태까지 연결하기](https://github.com/genie-99/MyDiary/issues/74)
