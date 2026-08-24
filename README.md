@@ -195,7 +195,8 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#103 — LLM·RAG에서 AI Agent·Multi-Agent Harness까지 확장하기](https://github.com/genie-99/MyDiary/issues/103)
+- [#108 — Agent 4대 구성요소에서 Direct·ReAct Graph와 가드레일까지 연결하기](https://github.com/genie-99/MyDiary/issues/108)
+- [#103 — LLM·RAG에서 Agent 추론·협업·Deep Research까지 연결하기](https://github.com/genie-99/MyDiary/issues/103)
 - [#102 — IR·RAG에서 LLM Agent의 환경·계획·Tool·MCP·LangChain까지 연결하기](https://github.com/genie-99/MyDiary/issues/102)
 - [#98 — RNN 한계에서 Transformer 기반 멀티모달 실습까지 연결하기](https://github.com/genie-99/MyDiary/issues/98)
 - [#95 — PyTorch·ResNet에서 VLM·온디바이스·생성형 비전까지 연결하기](https://github.com/genie-99/MyDiary/issues/95)
