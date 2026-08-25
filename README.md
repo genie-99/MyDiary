@@ -149,7 +149,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### CS
 
-- [#112 — 비트 범위·C 정수형에서 고정·부동소수점 표현까지 연결하기](https://github.com/genie-99/MyDiary/issues/112)
+- [#112 — 비트 범위·C 정수형에서 고정·IEEE 754·GPU 수치 연산까지 연결하기](https://github.com/genie-99/MyDiary/issues/112)
 - [#110 — 파일 디스크립터부터 inode·블록 할당·마운트까지 연결하기](https://github.com/genie-99/MyDiary/issues/110)
 - [#101 — 논리 주소 변환부터 요구 페이징·페이지 교체까지 연결하기](https://github.com/genie-99/MyDiary/issues/101)
 - [#92 — CPU 버스트와 스케줄링 알고리즘·Linux 정책 연결하기](https://github.com/genie-99/MyDiary/issues/92)
@@ -200,7 +200,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#111 — Planner-Worker StateGraph에서 Reflection 루프와 성과 평가까지 구현하기](https://github.com/genie-99/MyDiary/issues/111)
+- [#111 — Multi-Agent 품질 루프와 모델 경량화·PEFT 전략 연결하기](https://github.com/genie-99/MyDiary/issues/111)
 - [#108 — Agent 4대 구성요소에서 Direct·ReAct Graph와 가드레일까지 연결하기](https://github.com/genie-99/MyDiary/issues/108)
 - [#103 — LLM·RAG에서 Agent 추론·협업·Deep Research까지 연결하기](https://github.com/genie-99/MyDiary/issues/103)
 - [#102 — IR·RAG에서 LLM Agent의 환경·계획·Tool·MCP·LangChain까지 연결하기](https://github.com/genie-99/MyDiary/issues/102)
