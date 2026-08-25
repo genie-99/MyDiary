@@ -172,7 +172,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
-- [#113 — 네 가지 자동 주입과 선택적 의존관계 이해하기](https://github.com/genie-99/MyDiary/issues/113)
+- [#113 — 네 가지 자동 주입과 선택 옵션 동작 검증하기](https://github.com/genie-99/MyDiary/issues/113)
 - [#109 — 컴포넌트 스캔·자동 주입과 Bean 충돌 이해하기](https://github.com/genie-99/MyDiary/issues/109)
 - [#106 — BeanDefinition·싱글톤과 @Configuration CGLIB 동작 연결하기](https://github.com/genie-99/MyDiary/issues/106)
 - [#105 — Bean 조회·컨테이너 계층과 Java·XML 설정 메타데이터 연결하기](https://github.com/genie-99/MyDiary/issues/105)
