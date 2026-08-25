@@ -197,7 +197,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#111 — 단일 Agent 한계에서 Planner-Worker StateGraph까지 구현하기](https://github.com/genie-99/MyDiary/issues/111)
+- [#111 — Planner-Worker StateGraph에서 Reflection 루프와 성과 평가까지 구현하기](https://github.com/genie-99/MyDiary/issues/111)
 - [#108 — Agent 4대 구성요소에서 Direct·ReAct Graph와 가드레일까지 연결하기](https://github.com/genie-99/MyDiary/issues/108)
 - [#103 — LLM·RAG에서 Agent 추론·협업·Deep Research까지 연결하기](https://github.com/genie-99/MyDiary/issues/103)
 - [#102 — IR·RAG에서 LLM Agent의 환경·계획·Tool·MCP·LangChain까지 연결하기](https://github.com/genie-99/MyDiary/issues/102)
