@@ -199,7 +199,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### AI · Codex
 
-- [#115 — LoRA·QLoRA에서 Gemma 3n 추론과 Qwen3 제주어 LoRA 실습까지](https://github.com/genie-99/MyDiary/issues/115)
+- [#115 — 온디바이스 AI 하드웨어·정수 양자화·현실 적응과 LoRA 실습 연결하기](https://github.com/genie-99/MyDiary/issues/115)
 - [#116 — 수 체계에서 GPU 저정밀 연산과 모델 경량화·양자화·PEFT까지](https://github.com/genie-99/MyDiary/issues/116)
 - [#111 — LangGraph Planner-Worker·Reflection 전체 코드 구현](https://github.com/genie-99/MyDiary/issues/111)
 - [#108 — Agent 4대 구성요소에서 Direct·ReAct Graph와 가드레일까지 연결하기](https://github.com/genie-99/MyDiary/issues/108)
