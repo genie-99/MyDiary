@@ -173,7 +173,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
-- [#118 — 생성자 주입과 Lombok으로 필수 의존성 안전하게 고정하기](https://github.com/genie-99/MyDiary/issues/118)
+- [#118 — 생성자 주입·Lombok과 중복 Bean 선택 전략 이해하기](https://github.com/genie-99/MyDiary/issues/118)
 - [#113 — 네 가지 자동 주입과 선택 옵션 동작 검증하기](https://github.com/genie-99/MyDiary/issues/113)
 - [#109 — 컴포넌트 스캔·자동 주입과 Bean 충돌 이해하기](https://github.com/genie-99/MyDiary/issues/109)
 - [#106 — BeanDefinition·싱글톤과 @Configuration CGLIB 동작 연결하기](https://github.com/genie-99/MyDiary/issues/106)
