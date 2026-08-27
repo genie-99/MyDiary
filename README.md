@@ -94,6 +94,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### 빅분기
 
+- [#121 — 분석 모형 선정부터 정규화·데이터 분할까지 설계하기](https://github.com/genie-99/MyDiary/issues/121)
 - [#114 — EDA로 척도·상관·분포에서 고급 데이터 탐색까지 연결하기](https://github.com/genie-99/MyDiary/issues/114)
 - [#107 — 데이터 정제에서 변수 선택·차원 축소와 불균형 대응까지 연결하기](https://github.com/genie-99/MyDiary/issues/107)
 - [#85 — 데이터 수집·변환에서 분산 저장과 NoSQL 선택까지 연결하기](https://github.com/genie-99/MyDiary/issues/85)
