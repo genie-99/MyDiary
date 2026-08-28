@@ -176,6 +176,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
+- [#124 — Bean 스코프와 singleton·prototype 주입 문제 이해하기](https://github.com/genie-99/MyDiary/issues/124)
 - [#122 — 빈 생명주기 콜백과 종료 메서드 추론 이해하기](https://github.com/genie-99/MyDiary/issues/122)
 - [#118 — 생성자 주입부터 전략 Bean과 등록 기준까지 이해하기](https://github.com/genie-99/MyDiary/issues/118)
 - [#113 — 네 가지 자동 주입과 선택 옵션 동작 검증하기](https://github.com/genie-99/MyDiary/issues/113)
