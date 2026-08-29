@@ -152,6 +152,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### CS
 
+- [#126 — OSI·TCP/IP 계층과 PDU·캡슐화 흐름 복습하기](https://github.com/genie-99/MyDiary/issues/126)
 - [#123 — 네트워크 구조부터 OSI·TCP/IP·캡슐화까지 연결하기](https://github.com/genie-99/MyDiary/issues/123)
 - [#110 — 파일 디스크립터부터 inode·블록 할당·마운트까지 연결하기](https://github.com/genie-99/MyDiary/issues/110)
 - [#101 — 논리 주소 변환부터 요구 페이징·페이지 교체까지 연결하기](https://github.com/genie-99/MyDiary/issues/101)
