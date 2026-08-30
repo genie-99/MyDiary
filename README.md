@@ -177,7 +177,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
-- [#127 — HttpServletRequest로 요청 라인·헤더·요청 상태 이해하기](https://github.com/genie-99/MyDiary/issues/127)
+- [#127 — HttpServletRequest로 요청 정보와 Query·Form Parameter 이해하기](https://github.com/genie-99/MyDiary/issues/127)
 - [#125 — 내장 Tomcat에서 Servlet 요청·응답 흐름 추적하기](https://github.com/genie-99/MyDiary/issues/125)
 - [#124 — Bean 스코프·지연 조회와 scoped proxy 생명주기 이해하기](https://github.com/genie-99/MyDiary/issues/124)
 - [#122 — 빈 생명주기 콜백과 종료 메서드 추론 이해하기](https://github.com/genie-99/MyDiary/issues/122)
