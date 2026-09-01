@@ -177,6 +177,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
+- [#129 — JSP 역할 혼합의 한계와 MVC 책임 분리 이해하기](https://github.com/genie-99/MyDiary/issues/129)
 - [#128 — Servlet 회원 관리에서 동적 HTML과 템플릿 엔진 필요성 이해하기](https://github.com/genie-99/MyDiary/issues/128)
 - [#127 — Servlet로 Query·Form·JSON 요청과 HTTP 응답 구성 이해하기](https://github.com/genie-99/MyDiary/issues/127)
 - [#125 — 내장 Tomcat에서 Servlet 요청·응답 흐름 추적하기](https://github.com/genie-99/MyDiary/issues/125)
