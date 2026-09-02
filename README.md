@@ -108,7 +108,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Algorithm
 
-- [#130 — FIFO와 front·rear로 선형 큐 동작 이해하기](https://github.com/genie-99/MyDiary/issues/130)
+- [#130 — 선형·원형 큐와 Java Queue·Deque API 이해하기](https://github.com/genie-99/MyDiary/issues/130)
 - [#117 — DP의 상태·점화식 이해와 두 문제로 구현하기](https://github.com/genie-99/MyDiary/issues/117)
 - [#99 — 다익스트라와 우선순위 큐로 최단 경로 계산하기](https://github.com/genie-99/MyDiary/issues/99)
 - [#96 — 격자 DFS로 치즈 연결 요소 세기와 인덱스 오류 바로잡기](https://github.com/genie-99/MyDiary/issues/96)
