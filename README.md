@@ -178,6 +178,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
+- [#132 — ControllerV1 구현체로 회원 요청과 JSP View 연결하기](https://github.com/genie-99/MyDiary/issues/132)
 - [#131 — Servlet Controller와 JSP View로 MVC·Forward 흐름 구현하기](https://github.com/genie-99/MyDiary/issues/131)
 - [#129 — JSP 역할 혼합의 한계와 MVC 책임 분리 이해하기](https://github.com/genie-99/MyDiary/issues/129)
 - [#128 — Servlet 회원 관리에서 동적 HTML과 템플릿 엔진 필요성 이해하기](https://github.com/genie-99/MyDiary/issues/128)
