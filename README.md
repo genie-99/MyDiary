@@ -124,6 +124,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Java
 
+- [#136 — Annotation의 유지 범위와 컴파일·런타임 처리 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/136)
 - [#120 — Thread 생성 방식과 start·run·공유 상태 이해하기](https://github.com/genie-99/MyDiary/issues/120)
 - [#93 — synchronized부터 LockSupport·ReentrantLock까지 락과 대기 제어 이해하기](https://github.com/genie-99/MyDiary/issues/93)
 - [#91 — interrupt·volatile·synchronized로 스레드 제어와 공유 상태 이해하기](https://github.com/genie-99/MyDiary/issues/91)
