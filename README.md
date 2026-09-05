@@ -179,6 +179,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
+- [#135 — FrontControllerV3에서 ModelView와 MyView 렌더링 흐름 완성하기](https://github.com/genie-99/MyDiary/issues/135)
 - [#134 — Front Controller V1·V2·V3에서 View와 Model 책임 분리하기](https://github.com/genie-99/MyDiary/issues/134)
 - [#132 — ControllerV1 다형성으로 회원 요청 라우팅·JSP 연결하기](https://github.com/genie-99/MyDiary/issues/132)
 - [#131 — Servlet Controller와 JSP View로 MVC·Forward 흐름 구현하기](https://github.com/genie-99/MyDiary/issues/131)
