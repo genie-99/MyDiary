@@ -155,7 +155,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### CS
 
-- [#137 — 물리·데이터 링크 계층에서 이더넷·NIC·스위치 흐름 이해하기](https://github.com/genie-99/MyDiary/issues/137)
+- [#137 — 이더넷 프레임부터 IP 주소·라우팅·ARP까지 계층 흐름 연결하기](https://github.com/genie-99/MyDiary/issues/137)
 - [#126 — OSI·TCP/IP 계층과 PDU·캡슐화 흐름 복습하기](https://github.com/genie-99/MyDiary/issues/126)
 - [#123 — 네트워크 구조부터 OSI·TCP/IP·캡슐화까지 연결하기](https://github.com/genie-99/MyDiary/issues/123)
 - [#110 — 파일 디스크립터부터 inode·블록 할당·마운트까지 연결하기](https://github.com/genie-99/MyDiary/issues/110)
