@@ -181,6 +181,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
+- [#140 — SLF4J·Logback으로 로그 출력과 메시지 포맷팅 이해하기](https://github.com/genie-99/MyDiary/issues/140)
 - [#139 — HandlerMapping·HandlerAdapter·ViewResolver로 Spring MVC 요청 처리 연결하기](https://github.com/genie-99/MyDiary/issues/139)
 - [#138 — HandlerAdapter로 V3·V4 컨트롤러 규약 통합하기](https://github.com/genie-99/MyDiary/issues/138)
 - [#135 — FrontControllerV3에서 ModelView와 MyView 렌더링 흐름 완성하기](https://github.com/genie-99/MyDiary/issues/135)
