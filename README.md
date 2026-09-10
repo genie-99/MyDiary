@@ -155,6 +155,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### CS
 
+- [#141 — 포트부터 TCP 연결·신뢰성 제어와 UDP 차이까지 이해하기](https://github.com/genie-99/MyDiary/issues/141)
 - [#137 — 이더넷 프레임부터 IP 주소·라우팅·ARP까지 계층 흐름 연결하기](https://github.com/genie-99/MyDiary/issues/137)
 - [#126 — OSI·TCP/IP 계층과 PDU·캡슐화 흐름 복습하기](https://github.com/genie-99/MyDiary/issues/126)
 - [#123 — 네트워크 구조부터 OSI·TCP/IP·캡슐화까지 연결하기](https://github.com/genie-99/MyDiary/issues/123)
