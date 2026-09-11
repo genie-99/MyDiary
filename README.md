@@ -182,7 +182,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
-- [#142 — 컨트롤러 인자로 HTTP 헤더·쿠키와 다중 값 조회하기](https://github.com/genie-99/MyDiary/issues/142)
+- [#142 — HTTP 헤더·쿠키·요청 파라미터 조회와 직접 응답 작성하기](https://github.com/genie-99/MyDiary/issues/142)
 - [#140 — SLF4J·Logback과 요청 조건별 매핑·회원 API 이해하기](https://github.com/genie-99/MyDiary/issues/140)
 - [#139 — HandlerMapping·HandlerAdapter·ViewResolver로 Spring MVC 요청 처리 연결하기](https://github.com/genie-99/MyDiary/issues/139)
 - [#138 — HandlerAdapter로 V3·V4 컨트롤러 규약 통합하기](https://github.com/genie-99/MyDiary/issues/138)
