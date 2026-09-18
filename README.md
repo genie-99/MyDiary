@@ -185,6 +185,7 @@ GitHub Issue의 상세 학습 기록을 주제별 링크로 모아 둡니다.
 
 ### Spring · Gradle · Frontend · Git
 
+- [#148 — Thymeleaf 상품 관리와 폼 바인딩·PRG 흐름 완성하기](https://github.com/genie-99/MyDiary/issues/148)
 - [#144 — 타입·미디어 타입으로 HTTP 메시지 컨버터 선택 과정 이해하기](https://github.com/genie-99/MyDiary/issues/144)
 - [#143 — 요청 바인딩·JSON 변환부터 뷰·HTTP 응답까지 연결하기](https://github.com/genie-99/MyDiary/issues/143)
 - [#142 — HTTP 헤더·쿠키·요청 파라미터 조회와 직접 응답 작성하기](https://github.com/genie-99/MyDiary/issues/142)
